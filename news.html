@@ -1,98 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang = en>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/mootools/1.4.5/mootools-yui-compressed.js"></script>
+    <script type="text/javascript" src="js/vector.js"></script>
+    <script type="text/javascript" src="js/map-mootools.js"></script>
+    <script type="text/javascript" src="js/view.js"></script>
+    <title>Corona KR</title>
     <style>
-        * {
+        *{
             box-sizing: border-box;
-        }
-        .navbarr2{
-            font-family: Bold;
-            font-size: 50px;
-            margin-left: 50px;
-            margin-right: 10px;
-        }
-
-        .nav-link{
-            font-family: Bold;
-            font-size: 40px;
-            margin-right: 60px;
-        }
-
-        /* Add a gray background color with some padding */
-        body {
-            font-family: Arial;
-            padding: 40px;
-            background: cadetblue;
-        }
-
-        /* Header/Blog Title */
-        .header {
-            padding: 30px;
-            font-size: 25px;
-            text-align: center;
-            background: ghostwhite;
-            margin-left: 50px;
-            margin-right: 50px;
-            margin-top: 30px;
-            margin-bottom: 30px;
-        }
-
-        /* Create two unequal columns that floats next to each other */
-        /* Left column */
-        .leftColumn {
-            float: left;
-            width: 50%;
-        }
-
-        /* Right column */
-        .rightColumn {
-            float: left;
-            width: 50%;
-            padding-left: 40px;
-        }
-
-        /* Fake image */
-        .imgSrc {
-            background-color: #343a40;
-            width: 100%;
-            padding: 10px;
-        }
-
-        /* Add a card effect for articles */
-        .card {
-            background-color: ghostwhite;
-            padding: 30px;
-            margin-top: 30px;
-            margin-bottom: 30px;
-            margin-right: 50px;
-            margin-left: 50px;
-        }
-
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        /* Footer */
-        .about {
-            padding: 50px;
-            margin-right: 50px;
-            margin-left: 50px;
-            text-align: center;
-            background: ghostwhite;
-            margin-top: 10px;
-            font-size: 30px;
-        }
-
-        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-        @media screen and (max-width: 800px) {
-            .leftColumn, .rightColumn {
-                width: 100%;
-                padding: 0;
-            }
         }
     </style>
 </head>
@@ -106,50 +32,124 @@
     </div>
 </header>
 
-<div class = "header">
+<!--
+<div class = "header" >
     <h2> Corona News & Last Updates</h2>
 </div>
+-->
 
-<div class = "row">
-    <div class = "leftColumn">
+<div class = "container">
+    <div class = "row">
 
-        <div class = "card">
-            <h2> Last Updates & Highlights 1 </h2>
-            <h5> News source & date of the release</h5>
-            <div class = "imgSrc" style = "height: 150px;">Image </div>
-            <p> Title of the News</p>
-            <p> And the news description begins with it and so on & so far</p>
+        <div class = "col-4 mb-lg-5">
+            <h3 class = "card-header" >
+                Card Header
+            </h3>
+            <img class = "card-img" src = "img/kakao.jpg" >
+            <p class = "card-text "> I have received offer from Kakao</p>
+
         </div>
 
-        <div class = "card">
-            <h2> Last Updates & Highlights 2</h2>
-            <h5> News source & date of the release</h5>
-            <div class = "imgSrc" style = "height: 200px;">Second Image</div>
-            <p>Title of the news 2 </p>
-            <p> And the second description of the news begins with and so on & so far </p>
-        </div>
-</div>
-    <div class = "rightColumn">
-
-        <div class = "card">
-            <h2>Deaths Score</h2>
-            <div class = "imgSrc" style = "height: 150px;">Image3</div>
-            <p> Last Updates of how many people have died</p>
+        <div class = "col-4">
+            <h3 class = "card-header">
+                Card Header
+            </h3>
+            <img class = "card-img" src = "img/kakao.jpg">
+            <p class = "card-text"> I have received offer from Kakao</p>
         </div>
 
-        <div class = "card">
-            <h3> Other News</h3>
-            <div class = "imgSrc">Image</div><br>
-            <div class = "imgSrc">Image</div><br>
-            <div class = "imgSrc">Image</div>
+        <div class = "col-4">
+            <h3 class = "card-header">
+                Card Header
+            </h3>
+            <img class = "card-img" src = "img/kakao.jpg">
+            <p class = "card-text"> I have received offer from Kakao</p>
         </div>
 
-        <div class = "about"><a class = "nav-link" href="about.html">About us</a></div>
+        <div class = "col-4">
+            <h3 class = "card-header">
+                Card Header
+            </h3>
+            <img class = "card-img" src = "img/kakao.jpg">
+            <p class = "card-text"> I have received offer from Kakao</p>
+        </div>
+
+        <div class = "col-4">
+            <h3 class = "card-header">
+                Card Header
+            </h3>
+            <img class = "card-img" src = "img/kakao.jpg">
+            <p class = "card-text"> I have received offer from Kakao</p>
+        </div>
     </div>
 </div>
 
+<!-- Footer -->
+<footer class="page-footer font-small mdb-color red">
 
+    <!-- Footer Elements -->
+    <div class="container">
+
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+
+            <!--Grid column-->
+            <div class="col-md-6">
+
+                <!-- Video -->
+                <div class = "container my-md-4">
+
+                    <h2 class = "text-center font-weight-bolder">
+                        CoronaVirus Cases:
+                        <div class = "page-break">
+                            <img class = "card-img" src="img/statis.jpg">
+                        </div>
+                    </h2>
+
+                    <h2 class = "text-center font-weight-bolder">
+                        Deaths:
+                        <div class = "page-break">
+                            <img class = "card-img" src="img/statis2.jpg">
+                        </div>
+                    </h2>
+
+                    <h2 class = "text-center font-weight-bolder">
+                        Revovered:
+                        <div class = "page-break">
+                            <img class = "card-img" src="img/statis3.jpg">
+                        </div>
+                    </h2>
+
+
+                </div>
+               <!-- <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe class="embed-responsive-item" src="https://https://www.worldometers.info/coronavirus/"
+                            allowfullscreen></iframe>
+                </div>-->
+
+            </div>
+            <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+    </div>
+    <!-- Footer Elements -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 <!-- <div id="regiontitle"></div>-->
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 
 </body>
 </html>
