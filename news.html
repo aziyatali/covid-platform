@@ -1,1 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .navbarr2{
+            font-family: Bold;
+            font-size: 50px;
+            margin-left: 50px;
+            margin-right: 10px;
+        }
 
+        .nav-link{
+            font-family: Bold;
+            font-size: 40px;
+            margin-right: 60px;
+        }
+
+        /* Add a gray background color with some padding */
+        body {
+            font-family: Arial;
+            padding: 40px;
+            background: cadetblue;
+        }
+
+        /* Header/Blog Title */
+        .header {
+            padding: 30px;
+            font-size: 25px;
+            text-align: center;
+            background: ghostwhite;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        .leftColumn {
+            float: left;
+            width: 50%;
+        }
+
+        /* Right column */
+        .rightColumn {
+            float: left;
+            width: 50%;
+            padding-left: 40px;
+        }
+
+        /* Fake image */
+        .imgSrc {
+            background-color: #343a40;
+            width: 100%;
+            padding: 10px;
+        }
+
+        /* Add a card effect for articles */
+        .card {
+            background-color: ghostwhite;
+            padding: 30px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Footer */
+        .about {
+            padding: 50px;
+            margin-right: 50px;
+            margin-left: 50px;
+            text-align: center;
+            background: ghostwhite;
+            margin-top: 10px;
+            font-size: 30px;
+        }
+
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+            .leftColumn, .rightColumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="navbarr2">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="prevention.html">Prevention</a>
+        <a class="nav-link active" href="news.html">News</a>
+        <a class="nav-link" href="about.html">About</a>
+    </div>
+</header>
+
+<div class = "header">
+    <h2> Corona News & Last Updates</h2>
+</div>
+
+<div class = "row">
+    <div class = "leftColumn">
+
+        <div class = "card">
+            <h2> Last Updates & Highlights 1 </h2>
+            <h5> News source & date of the release</h5>
+            <div class = "imgSrc" style = "height: 150px;">Image </div>
+            <p> Title of the News</p>
+            <p> And the news description begins with it and so on & so far</p>
+        </div>
+
+        <div class = "card">
+            <h2> Last Updates & Highlights 2</h2>
+            <h5> News source & date of the release</h5>
+            <div class = "imgSrc" style = "height: 200px;">Second Image</div>
+            <p>Title of the news 2 </p>
+            <p> And the second description of the news begins with and so on & so far </p>
+        </div>
+</div>
+    <div class = "rightColumn">
+
+        <div class = "card">
+            <h2>Deaths Score</h2>
+            <div class = "imgSrc" style = "height: 150px;">Image3</div>
+            <p> Last Updates of how many people have died</p>
+        </div>
+
+        <div class = "card">
+            <h3> Other News</h3>
+            <div class = "imgSrc">Image</div><br>
+            <div class = "imgSrc">Image</div><br>
+            <div class = "imgSrc">Image</div>
+        </div>
+
+        <div class = "about"><a class = "nav-link" href="about.html">About us</a></div>
+    </div>
+</div>
+
+
+<!-- <div id="regiontitle"></div>-->
+
+</body>
+</html>
