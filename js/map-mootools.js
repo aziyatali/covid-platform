@@ -15,7 +15,7 @@ function run_map(container, options, style, data){
       'stroke': [style.CL1, style.ST1],
       'onTransform': function(){
          // onResize event
-         if(map.scale != current_scale){
+         if(map.scale !== current_scale){
            $('resizer').getElement('input').value = Math.round(map.scale / map.baseScale * 100);
            var paths = map.rootGroup.getElements(path_tag);
            for (var i=paths.length; i--; ){
@@ -30,7 +30,7 @@ function run_map(container, options, style, data){
     var map = vectorMap(container, options);
     map.onTransform();
 
-    var path_tag = map.canvas.mode == 'svg'? 'path': 'shape';
+    var path_tag = map.canvas.mode === 'svg'? 'path': 'shape';
     $(map.rootGroup).getElements(path_tag).addEvents({
       'mousemove': function(e){
         var code = this.id.split('_')[1];
@@ -70,14 +70,14 @@ function run_map(container, options, style, data){
       },
       'mouseout': unhover,
       'touchstart': function(e){
-        if(e.touches.length == 1){
+        if(e.touches.length === 1){
           this.mouseCoords = {x: e.touches.item(0).pageX, y: e.touches.item(0).pageY};
           e.preventDefault();
         }
       },
       'touchend': function(e){
         if(!map.dragged){
-          if(map.active_item == this){
+          if(map.active_item === this){
             this.fireEvent('click');
           } else {
             this.fireEvent('mousemove', e);
@@ -109,7 +109,7 @@ function run_map(container, options, style, data){
       }
     });
 
-    map.makeDraggable();
+    //map.makeDraggable();
 
     map.reorder = function(code){
       if (map.active_item){
@@ -124,10 +124,10 @@ function run_map(container, options, style, data){
         //}
         $('regiontitle').set('text', data[code].title);
       }
-    }
+    };
 
     $('resizer').getElement('input').addEvent('change', function(){
-      var value = this.value / 100
+      var value = this.value / 100;
       if (!isNaN(value)){
         map.setScale(value * map.baseScale);
       }
