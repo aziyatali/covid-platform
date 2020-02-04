@@ -6,7 +6,10 @@
     border-width: 2px;
     border-color: #343a40;*/
 }
-
+.no-padding{
+    padding-left: 0;
+    padding-right: 0;
+}
 /* Navigation links */
 .navbarr2 a {
     float: left;
