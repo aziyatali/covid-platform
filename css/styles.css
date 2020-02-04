@@ -11,14 +11,14 @@
 .navbarr2 a {
     float: left;
     padding: 32px;
-    color: #343a40;
+    color: navajowhite;
     text-decoration: none;
     font-size: 17px;
     width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
     text-align: center; /* If you want the text to be centered */
     border-style: solid;
     border-width: 2px 2px 2px 0px;
-    border-color: #343a40;
+    border-color: navajowhite;
 }
 
 /* Add a background color on mouse-over */
@@ -29,8 +29,8 @@
 
 /* Style the current/active link */
 .navbarr2 a.active {
-    color: white;
-    background-color: #343a40;
+    color: #000;
+    background-color: navajowhite;
 }
 
 /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */

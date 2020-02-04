@@ -2268,7 +2268,7 @@ svgMap.prototype.init = function (options) {
     zoomScaleSensitivity: 0.2,
 
     // Zoom with mousewheel
-    mouseWheelZoomEnabled: true,
+    mouseWheelZoomEnabled:false,
 
     // Data colors
     colorMax: '#CC0033',
