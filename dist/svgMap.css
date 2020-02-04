@@ -1,4 +1,7 @@
 /*! svgMap | https://github.com/StephanWagner/svgMap | MIT License | Copyright Stephan Wagner | https://stephanwagner.me */
+*{
+  font-family: Roboto, monospace;
+}
 .svgMap-map-wrapper {
   position: relative;
   width: 100%;
@@ -103,10 +106,11 @@
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   position: absolute;
   z-index: 2;
-  border-radius: 2px;
-  background: #fff;
+  padding: 5px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.85);
   transform: translate(-50%, -100%);
-  border-bottom: 1px solid #000;
+  border: 2px solid navajowhite;
   display: none;
   pointer-events: none;
   min-width: 60px;
@@ -115,7 +119,7 @@
 .svgMap-tooltip.svgMap-tooltip-flipped {
   transform: translate(-50%, 0);
   border-bottom: 0;
-  border-top: 1px solid #000;
+  border-top: 2px solid navajowhite;
 }
 
 .svgMap-tooltip.svgMap-active {
@@ -150,7 +154,7 @@
 
 .svgMap-tooltip .svgMap-tooltip-title {
   white-space: nowrap;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 28px;
   padding: 0 0 8px;
   text-align: center;
@@ -159,14 +163,14 @@
 .svgMap-tooltip .svgMap-tooltip-content {
   white-space: nowrap;
   text-align: center;
-  font-size: 14px;
+  font-size: 18px;
   color: #777;
   margin: -5px 0 0;
 }
 
 .svgMap-tooltip .svgMap-tooltip-content table {
   padding: 0;
-  border-spacing: 0px;
+  border-spacing: 0;
   margin: auto;
 }
 
@@ -210,8 +214,8 @@
   content: '';
   width: 20px;
   height: 20px;
-  background: #fff;
-  border: 1px solid #000;
+  background: rgba(255,255,255,0.85);
+  border: 2px solid navajowhite;
   position: absolute;
   bottom: 6px;
   left: 50%;
