@@ -1,4 +1,4 @@
-#WuhanCoronaVirus
+#CoronaVirus
 
 Objection of this website is to help people preventing from Wuhan coronavirus outbreak
 
