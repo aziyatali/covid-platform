@@ -1,15 +1,10 @@
-#CoronaVirus
+## CoronaVirus
 
-Objection of this website is to help people preventing from Wuhan coronavirus outbreak
+The mission of this website is to assist people in preventing the spread of the coronavirus outbreak.
 
-Limits:
-  - site is only in Kyrgyz and Russian languages that means people who are able 
-  to speak and read in these languages can benefit from this. There are tons of information
-  on the Web in english so we though there is no need to add it.
-  
-Reason:
-There are not enough information on the Web in Kyrgyz and Russian languages. Especially in Kyrgyz.
-Our aim is to translate important cautious, warnings, tips, and many other valuable infromation and
-store them in our website so people can benefit from this. Also they can see lates updates and news regarding this disease.
-  
-  
+### Scope:
+
+The site is available in Kyrgyz and Russian languages, ensuring accessibility for individuals proficient in these languages. Given the abundance of information in English available online, we have focused on providing resources in Kyrgyz and Russian.
+
+### Rationale:
+There is a scarcity of information on the internet in Kyrgyz and Russian languages, with Kyrgyz being particularly underrepresented. Our goal is to translate essential cautions, warnings, tips, and other valuable information, making them available on our website for the benefit of our community. Visitors can stay informed with the latest updates and news related to this disease.
